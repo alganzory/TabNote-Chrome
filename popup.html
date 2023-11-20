@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			/* css styles to make the pop up look like bootstrap */
+			body {
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				line-height: 1.428571429;
+				color: #333333;
+				background-color: #ffffff;
+				padding: 10px;
+				margin: 0;
+				/* width to be scrolled */
+                width: 300px;
+                /* height to be scrolled */
+                height: 300px;
+                /* overflow to be scrolled */
+                overflow: auto;
+			}
+			h1 {
+				font-size: 20px;
+				margin: 0 0 10px;
+			}
+            h2 {
+                font-size: 16px;
+                margin: 0 0 10px;
+            }
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			li {
+				padding: 10px;
+				border-bottom: 1px solid #eeeeee;
+                cursor: pointer;
+			}
+			li:last-child {
+				border-bottom: none;
+			}
+            li:hover {
+                background-color: #eeeeee;
+            }
+			button {
+				padding: 6px 12px;
+				margin: 0;
+				font-size: 14px;
+				line-height: 1.428571429;
+				text-align: center;
+				white-space: nowrap;
+				vertical-align: middle;
+				cursor: pointer;
+				border: 1px solid transparent;
+				border-radius: 4px;
+				background-color: #428bca;
+				color: #ffffff;
+			}
+			button:hover {
+				background-color: #3071a9;
+				color: #ffffff;
+			}
+			button:active {
+				background-color: #3071a9;
+				color: #ffffff;
+				box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+			}
+            #deleteAll {
+                margin: 10px;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+		</style>
+	</head>
+	<body>
+		<h1>TabNote</h1>
+        <hr>
+        <h2> List of notes </h2>
+		<ul id="noteList"></ul>
+		<button id="deleteAll">Delete All</button>
+		<script src="popup.js"></script>
+	</body>
+</html>
